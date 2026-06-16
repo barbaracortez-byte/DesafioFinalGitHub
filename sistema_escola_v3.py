@@ -101,7 +101,13 @@ def calcular_frequencia(aulas_dadas, faltas):
     return round(percentual, 2)
 
 # >> FUNÇÃO 12: situacao_final(media, frequencia)
-
+def situacao_final(media, frequencia):
+    if media >= 6 and frequencia >= 75:
+        return "✅ Aprovado"
+    elif frequencia < 75:
+        return "❌ Reprovado por falta"
+    else:
+        return "❌ Reprovado por nota"
 
 # ------------------------------------------------------------
 # ÁREA DE TESTES — atualize conforme adiciona funções
