@@ -69,6 +69,10 @@ def verificar_aprovacao(media):
         return "Reprovado"
 
 # >> FUNÇÃO 9: gerar_email(nome, turma)
+def gerar_email(nome, turma):
+    nome_formatado = nome.lower().replace(" ", ".")
+    return f"{nome_formatado}.{turma.lower()}@senai.br"
+
 # >> FUNÇÃO 10: relatorio_aluno(aluno)
 
 
